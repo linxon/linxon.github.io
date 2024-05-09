@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background: #ECF4F6 no-repeat center center fixed;
+    background: #ECF4F6 no-repeat center center fixed; // /* #ECF4F6 */
     direction: ltr;
     user-select: none;
     overflow-x: hidden;
@@ -77,7 +77,7 @@ img {
 
 #main {
     position: absolute;
-    margin: -185px -242px auto;
+    margin: -185px -243px auto;
     width: 450px;
     height: 300px;
     left: 50%;
@@ -102,7 +102,7 @@ img {
     margin-bottom: 5px;
 }
 
-.dev {
+.nick_name {
     text-align: center;
     color: #999;
     font-size: 13px;
@@ -120,9 +120,9 @@ img {
     box-shadow: 0px 0px 0px 1px #fff inset;
     -webkit-box-shadow: 0px 0px 0px 1px #fff inset;
     -moz-box-shadow: 0px 0px 0px 1px #fff inset;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     font-weight: bold;
     color: #444;
     font-size: 0.9em;
@@ -147,15 +147,25 @@ img {
 .btn_email {
     display: inline-block;
     background: url(../img/mail.png) no-repeat;
-    background-position: 2px 2px;
-    background-size: 23px 23px;
-    -moz-background-size: 23px 23px;
-    -webkit-background-size: 23px 23px;
+    background-position: 4px 3px;
+    background-size: 22px 22px;
+    -moz-background-size: 22px 22px;
+    -webkit-background-size: 22px 22px;
     text-align: center;
 }
 .btn_skype {
     display: inline-block;
     background: url(../img/phone.png) no-repeat;
+    background-position: 4px 4px;
+    background-size: 20px 20px;
+    -moz-background-size: 20px 20px;
+    -webkit-background-size: 20px 20px;
+    text-align: center;
+}
+
+.btn_telegram {
+    display: inline-block;
+    background: url(../img/telegram.png) no-repeat;
     background-position: 4px 4px;
     background-size: 20px 20px;
     -moz-background-size: 20px 20px;
@@ -300,10 +310,13 @@ img {
 }
 
 #footer {
-    background: #F8F8F8;
+    background: #E1E1EA;
     border-top: 1px solid #cfcfcf;
-    border-bottom: 1px solid #cfcfcf;
+    /*border-bottom: 1px solid #cfcfcf;*/
     margin-bottom: 1px;
+    box-shadow: 0px 0px 0px 1px #FFF inset;
+    -webkit-box-shadow: 0px 0px 0px 1px #FFF inset;
+    -moz-box-shadow: 0px 0px 0px 1px #FFF inset;
     font-size: 12px;
     position: fixed;
     bottom: 0;
@@ -319,11 +332,11 @@ img {
 .foo_menu a {
     text-decoration: underline;
     display: inline-block;
-    padding: 5px 15px 5px 15px;
+    padding: 4px 15px 4px 15px;
     margin: -5px;
 }
 .foo_menu a:hover {
-    background: #e6e8ea;
+    background: #FFF;
 }
 
 .lang_list {
