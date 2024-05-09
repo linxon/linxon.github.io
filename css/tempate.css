@@ -109,6 +109,14 @@ img {
     margin-bottom: 15px;
 }
 
+.status {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+
 .btn_panel {
     text-align: center;
     padding: 15px;
