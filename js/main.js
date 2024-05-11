@@ -75,11 +75,11 @@ function fillWebpage() {
 					setCookie("avatar_url", data.avatar_url, 365);
 					setCookie("name", data.name, 365);
 					setCookie("nickname", data.login, 365);
-					setCookie("status", data.bio, 7);
-					setCookie("cookie_stat", '1', 7);
-
-					updateHTML_field();
+					setCookie("status", data.bio, 365);
+					setCookie("cookie_stat", '1', 1);
 				}
+
+				updateHTML_field();
 			});
 	} else {
 		updateHTML_field();
