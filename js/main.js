@@ -63,9 +63,15 @@ function updateHTML_field() {
 	document.getElementById("user_name").innerHTML = getCookie('name');
 	document.getElementById("user_nickname").innerHTML = '@' + getCookie('nickname');
 	document.getElementById("user_status").innerHTML = getCookie('status');
+
+	setTimeout(function (){
+		document.getElementById("loading_page").style.visibility = "hidden";
+	}, 500);
 }
 
 function fillWebpage() {
+	document.getElementById("loading_page").style.visibility = "visible";
+
 	if (checkCookie('cookie_stat', '1') == false) {
 		getJSON(github_api_uri,
 			function(err, data) {
